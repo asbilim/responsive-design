@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My survey form</title>
+</head>
+<body>
+  <h1 id="title">Contact Form</h1>
+  <p id="description">Please enter your information here</p>
+  <form action="" id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Enter your name:
+        <input type="text" id="name" required placeholder="enter your name">
+      </label>
+      <label for="email"  id="email-label">Enter your email:
+        <input type="email" id="email" required pattern="[A-Za-z0-9@.]{,8}" placeholder="enter your email">
+      </label>
+      <label for="number" id="number-label" >Enter your name:
+        <input type="number" id="number" required pattern="0-9" min="0" max="120" placeholder="enter a vaue" value="5">
+      </label>
+    </fieldset>
+    <fieldset>
+      <label>
+        Please choose one post:
+        <select name="dropdown" id="dropdown">
+          <option value="0">Select one value</option>
+          <option value="1">Goal keeper</option>
+          <option value="2">forward</option>
+          <option value="3">Defender</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+      Select your gender:
+      <label for="sex">
+        Male
+        <input type="radio" name="sex" value="sex">
+      </label>
+      <label for="sex">
+        Female
+        <input type="radio" name="sex" value="sex">
+      </label>
+    </fieldset>
+    <fieldset>
+      Please choose your interest:
+      <label>club <input type="checkbox" value="club"></label>
+      <label>national team <input type="checkbox" value="national"></label>
+    </fieldset>
+    <fieldset>
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+    </fieldset>
+    <input id="submit" type="submit"></inout>
+  </form>
+</body>
+</html>
